@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orea - Conecte. Solte as amarras.</title>
+    <!-- Importação das fontes do Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Comfortaa:wght@400;700&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --obsidian-black: #121212;
+            --cyber-lime: #39FF14;
+            --text-dark: #1A1A1A;
+            --text-muted: #4A4A4A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #ffffff; /* Fundo total branco na tela inteira */
+            color: var(--text-dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 680px; /* Largura ideal para leitura em desktop */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-container {
+            margin-bottom: 50px;
+            width: 100%;
+        }
+
+        .logo-img {
+            width: 100%;
+            max-width: 260px; /* Tamanho proporcional do logo */
+            height: auto;
+        }
+
+        .manifesto {
+            text-align: justify; /* Alinhamento elegante para blocos de texto */
+            line-height: 1.8;
+            font-size: 1.2rem;
+            margin-bottom: 45px;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        .manifesto p {
+            margin-bottom: 24px;
+        }
+
+        .slogan-box {
+            font-family: 'Comfortaa', sans-serif;
+            color: var(--text-dark);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 45px;
+            line-height: 1.4;
+        }
+
+        .slogan-box span {
+            color: var(--cyber-lime);
+            display: inline-block;
+        }
+
+        .wait-text {
+            font-family: 'Comfortaa', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--obsidian-black);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            position: relative;
+            padding-bottom: 5px;
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        /* Efeito de pulsação suave e profissional */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.7;
+            }
+            50% {
+                transform: scale(1.03);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0.7;
+            }
+        }
+
+        /* Ajustes responsivos para dispositivos móveis (Celulares) */
+        @media (max-width: 768px) {
+            body {
+                padding: 30px 24px;
+            }
+            .logo-container {
+                margin-bottom: 40px;
+            }
+            .logo-img {
+                max-width: 200px; /* Reduz levemente o logo no celular */
+            }
+            .manifesto {
+                font-size: 1.05rem;
+                text-align: left; /* Alinhamento à esquerda fica melhor em telas finas */
+            }
+            .slogan-box {
+                font-size: 1.25rem;
+            }
+            .wait-text {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logo centralizado no topo -->
+        <div class="logo-container">
+            <img src="logo.png" alt="Orea Logo" class="logo-img">
+        </div>
+
+        <!-- Manifesto institucional purificado -->
+        <div class="manifesto">
+            <p>A Orea nasceu para ser o ponto de virada. Um hub de orquestração inteligente que atua na fronteira da tecnologia para simplificar o complexo. Nós eliminamos o peso do back-end e criamos uma camada de conexão universal: onde antes existiam semanas de desenvolvimento e travas sistêmicas, hoje existe um encaixe fluido, amigável e instantâneo.</p>
+            
+            <p>Não somos apenas uma linha de código; somos uma ponte entre a sua plataforma e qualquer provedor de identidade do mercado. Uma parceria real feita para desenvolvedores e CEOs que buscam eficiência absoluta.</p>
+            
+            <p>Está na hora de deixar os processos pesados para trás.</p>
+        </div>
+
+        <!-- Novo Slogan Direto -->
+        <div class="slogan-box">
+            Orea: Conecte. <span>Solte as amarras.</span>
+        </div>
+
+        <!-- Linha final de expectativa -->
+        <div class="wait-text">
+            Aguarde!
+        </div>
+    </div>
+
+</body>
+</html>
